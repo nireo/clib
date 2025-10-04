@@ -1,7 +1,10 @@
 #ifndef __CLIB_STR_H__
 #define __CLIB_STR_H__
 
+#include "arena.h"
+#include "slice.h"
 #include <stddef.h>
+
 #define S(s) (str_t){s, sizeof(s) - 1}
 
 // str_t is a string structure that holds a pointer to a character array and its
